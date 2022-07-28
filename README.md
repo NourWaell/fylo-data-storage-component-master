@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []
-- Live Site URL: []
+- Solution URL: [https://www.frontendmentor.io/solutions/fylodatastoragecomponentmaster-using-html-and-css-twphR0PNSu]
+- Live Site URL: [https://fylo-data-storage-component-masters.vercel.app/]
 
 ### Built with
 
