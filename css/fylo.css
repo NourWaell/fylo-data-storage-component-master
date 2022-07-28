@@ -1,0 +1,295 @@
+    * {
+        box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+    }
+    
+     :root {
+        --PaleBlue: hsl(243, 100%, 93%);
+        --GrayishBlue: hsl(229, 7%, 55%);
+        --DarkBlue: hsl(228, 56%, 26%);
+        --VeryDarkBlue: hsl(229, 57%, 11%);
+    }
+    
+    body {
+        background: var(--VeryDarkBlue) url("/images/bg-desktop.png") no-repeat fixed;
+        background-size: contain;
+        background-position: bottom;
+    }
+    
+    @media (max-width: 1300px) {
+        body {
+            background-image: url("/images/bg-mobile.png");
+            background-size: cover;
+        }
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        bottom: -250px;
+    }
+    
+    @media (max-width: 1000px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+        }
+    }
+    
+    .fylo {
+        background-color: var(--DarkBlue);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 380px;
+        height: 210px;
+        position: relative;
+        left: 200px;
+        bottom: 30px;
+        border-radius: 10px 120px 10px 10px;
+        -webkit-border-radius: 10px 120px 10px 10px;
+        -moz-border-radius: 10px 120px 10px 10px;
+        -ms-border-radius: 10px 120px 10px 10px;
+        -o-border-radius: 10px 120px 10px 10px;
+    }
+    
+    @media (max-width: 1000px) {
+        .fylo {
+            left: 0;
+            bottom: 0;
+        }
+    }
+    
+    @media (max-width: 1300px) {
+        .fylo {
+            left: 0;
+        }
+    }
+    
+    .image img {
+        width: fit-content;
+    }
+    
+    .content {
+        position: relative;
+        right: 70px;
+        top: 50px;
+    }
+    
+    @media(max-width: 1000px) {
+        .content {
+            right: 50px;
+        }
+    }
+    
+    .folders {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        gap: 15px;
+    }
+    
+    .icon {
+        width: 45px;
+        height: 45px;
+        background-color: var(--VeryDarkBlue);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .info {
+        background-color: var(--DarkBlue);
+        width: 570px;
+        height: 150px;
+        position: relative;
+        right: 60px;
+        top: 33px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    
+    @media (max-width: 1000px) {
+        .info {
+            width: 380px;
+            right: 0;
+            height: 175px;
+        }
+    }
+    
+    @media (max-width: 1300px) {
+        .info {
+            right: 0;
+        }
+    }
+    
+    .prog-holder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .prog-holder::before {
+        content: "0 GB";
+        position: absolute;
+        color: var(--PaleBlue);
+        font-weight: 700;
+        top: 100px;
+        left: 50px;
+    }
+    
+    .prog-holder::after {
+        content: "1000 GB";
+        position: absolute;
+        color: var(--PaleBlue);
+        font-weight: 700;
+        top: 100px;
+        right: 50px;
+    }
+    
+    .prog {
+        background-color: var(--VeryDarkBlue);
+        height: 15px;
+        width: 470px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        margin-top: 30px;
+        outline: 3.5px solid var(--VeryDarkBlue);
+    }
+    
+    @media(max-width: 1000px) {
+        .prog {
+            width: 300px;
+        }
+    }
+    
+    .prog span {
+        display: block;
+        background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+        height: 100%;
+        position: relative;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    
+    .prog-holder p {
+        color: white;
+        position: relative;
+        top: 20px;
+        right: 125px;
+        font-weight: 400;
+    }
+    
+    .prog-holder p span {
+        font-weight: 700;
+    }
+    
+    @media(max-width: 1000px) {
+        .prog-holder p {
+            right: 0;
+        }
+    }
+    
+    .remain {
+        width: 170px;
+        height: 70px;
+        background-color: white;
+        color: black;
+        position: absolute;
+        left: 350px;
+        bottom: 130px;
+        border-radius: 10px 10px 0px 10px;
+        -webkit-border-radius: 10px 10px 0px 10px;
+        -moz-border-radius: 10px 10px 0px 10px;
+        -ms-border-radius: 10px 10px 0px 10px;
+        -o-border-radius: 10px 10px 0px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @media(max-width: 1000px) {
+        .remain {
+            left: 107px;
+            bottom: -35px;
+        }
+    }
+    
+    .one {
+        font-size: 40px;
+        color: var(--VeryDarkBlue);
+        font-weight: 700;
+    }
+    
+    .remain .sent {
+        font-size: 13px;
+        color: var(--GrayishBlue);
+        margin-left: 10px;
+        font-weight: 700;
+        bottom: 5px;
+        position: relative;
+    }
+    
+    .remain::after {
+        content: "";
+        position: absolute;
+        border-style: solid;
+        border-width: 21px;
+        border-color: transparent white transparent transparent;
+        top: 49px;
+        left: 128px;
+    }
+    
+    @media(max-width: 1000px) {
+        .remain::after {
+            border-color: transparent;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+    }
+    
+    .circle {
+        width: 11px;
+        height: 11px;
+        background-color: white;
+        opacity: 90%;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        position: absolute;
+        bottom: 64px;
+        right: 147px;
+        z-index: 1;
+    }
+    
+    @media (max-width: 1000px) {
+        .circle {
+            bottom: 88px;
+            right: 102px;
+        }
+    }
